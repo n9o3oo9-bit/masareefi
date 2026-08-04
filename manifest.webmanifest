@@ -1,21 +1,39 @@
 {
-  "name": "مصاريفي",
+  "id": "/masareefi/",
+  "name": "مصاريفي — إدارة الدخل والمصاريف",
   "short_name": "مصاريفي",
-  "description": "إدارة الدخل والالتزامات والمصاريف الشخصية",
+  "description": "يقسّم دخلك على التزاماتك حسب موعد وصول كل دفعة، ويتابع صرفك الأسبوعي، فتعرف في أي لحظة كم تقدر تصرف بأمان.",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "portrait",
   "background_color": "#101216",
   "theme_color": "#101216",
+  "categories": ["finance", "productivity", "lifestyle"],
+  "prefer_related_applications": false,
   "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
     {
-      "src": "icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "name": "تسجيل مصروف",
+      "short_name": "مصروف",
+      "description": "سجّل مصروفًا على ميزانيتك الأسبوعية",
+      "url": "./#/weekly",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "نظرة عامة",
+      "short_name": "نظرة عامة",
+      "description": "الدخل والالتزامات والمتبقي الحر",
+      "url": "./#/overview",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

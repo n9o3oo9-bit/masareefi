@@ -2,8 +2,12 @@
    الاستراتيجية: الشبكة أولًا مع الرجوع للمخزّن عند انقطاعها،
    حتى لا يعلق المستخدم على نسخة قديمة بعد كل تحديث. */
 
-const CACHE = 'masareefi-v2';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
+const CACHE = 'masareefi-v3';
+const SHELL = [
+  './', './index.html', './manifest.webmanifest', './icon.svg',
+  './icons/icon-192.png', './icons/icon-512.png',
+  './icons/icon-maskable-512.png', './icons/apple-touch-icon.png',
+];
 
 self.addEventListener('install', e => {
   self.skipWaiting();
